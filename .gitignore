@@ -164,3 +164,11 @@ cython_debug/
 # test directory
 
 /test
+
+# some shitty files
+
+config.json
+
+# audio, because i dont want DMCA appeal
+
+/audio
