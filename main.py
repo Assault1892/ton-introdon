@@ -37,14 +37,9 @@ async def playgame(interaction: discord.Interaction):
 以下のボイスチャンネルに参加し、このチャンネルを回答用チャンネルとしてマークします！
 ボイスチャンネル 名前: `{user_voice_channel_name}` | ボイスチャンネル ID: `{user_voice_channel_id}`
 回答用チャンネル 名前: `{user_answer_channel_name}` | 回答用チャンネル ID: `{user_answer_channel_id}`
-""")
-    @client.event
-    async def on_message(message):
-        if message.author.bot:
-            return
 
-        if message.channel.id == user_answer_channel_id:
-            print("はげ")
-        
+マーク解除するには `終了` と発言することでマーク解除できます！
+""")
+    
 
 client.run(config["token"])
