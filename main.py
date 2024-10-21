@@ -45,5 +45,6 @@ async def playgame(interaction: discord.Interaction):
 
         if message.channel.id == user_answer_channel_id:
             print("はげ")
+        
 
 client.run(config["token"])
